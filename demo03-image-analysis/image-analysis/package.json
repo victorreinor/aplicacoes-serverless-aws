@@ -1,12 +1,16 @@
 {
-  "name": "demo02-sls-framework",
+  "name": "image-analysis",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.969.0",
+    "axios": "^0.21.1"
+  }
 }
