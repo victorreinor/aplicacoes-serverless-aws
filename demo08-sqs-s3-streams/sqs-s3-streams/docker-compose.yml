@@ -5,9 +5,11 @@ services:
     image: localstack/localstack
     ports:
       - "4566:4566"
+      - "4576:4576"
     environment:
-      - SERVICES=s3
+      - SERVICES=s3,sqs
       - LAMBDA_EXECUTOR=local
+      - LAMBDA_REMOTE_DOCKER=false
       - DOCKER_HOST=unix:///var/run/docker.sock
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -28,6 +30,7 @@ services:
     environment: 
         LOCALSTACK_HOST: localstack
         S3_PORT: 4566
+        SQS_PORT: 4566
 
 volumes:
     nodemodules: {}

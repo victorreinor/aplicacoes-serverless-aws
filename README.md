@@ -80,3 +80,9 @@ O Amazon DynamoDB é um serviço de banco de dados NoSQL totalmente gerenciado q
 O objetivo e reaproveitar ou compilar pacotes para o formato que roda na AWS.
 Como sabemos as limitações da Lambda que é as dependencias dos ambientes, quando compilamos um projeto no Windows ele vai ter um binário diferente, no Linux a mesma coisa. 
 Com a Layers conseguimos rodar no proprio runtime que roda a Lambda.
+
+### Amazon Simple Queue Service (SQS)
+
+O Amazon Simple Queue Service (SQS) é um serviço de filas de mensagens gerenciado que permite o desacoplamento e a escalabilidade de microsserviços, sistemas distribuídos e aplicações sem servidor. O SQS elimina a complexidade e a sobrecarga associadas ao gerenciamento e à operação de middleware orientado a mensagens, além de permitir que os desenvolvedores se dediquem a criar diferenciais. Use o SQS para enviar, armazenar e receber mensagens entre componentes de software em qualquer volume, sem perder mensagens ou precisar que outros serviços estejam disponíveis
+
+[![Sqs](https://raw.githubusercontent.com/victorreinor/aplicacoes-serverless-aws/master/imagens/sqs.png "Sqs")](https://raw.githubusercontent.com/victorreinor/aplicacoes-serverless-aws/master/imagens/sqs.png "Sqs")
